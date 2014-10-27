@@ -1,6 +1,6 @@
-package moneycalculator;
+package application;
 
-public class MoneyCalculator {
+public class Application {
 
     public static void main(String[] args) {
     }
