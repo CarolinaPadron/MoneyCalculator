@@ -1,4 +1,4 @@
-package view;
+package persistence;
 
 public class ExchangeRateLoader {
     
