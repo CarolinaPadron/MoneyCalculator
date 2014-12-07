@@ -1,15 +1,15 @@
 package model;
 
 public class Money {
-    private final double amount;
+    private final Number amount;
     private final Currency currency;
     
-    public Money(double amount, Currency currency) {
+    public Money(Number amount, Currency currency) {
         this.amount = amount;
         this.currency = currency;
     }
 
-    public double getAmount() {
+    public Number getAmount() {
         return amount;
     }
 
@@ -17,4 +17,8 @@ public class Money {
         return currency;
     }
     
+    @Override
+    public String toString() {
+        return amount.getNumerator()/amount.getDenominator() + " " + currency.getCode();
+    }
 }
